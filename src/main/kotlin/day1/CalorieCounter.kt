@@ -1,6 +1,6 @@
 import java.io.File
 
-private const val RESOURCE_ROOT = "src/main/resources"
+private const val RESOURCE_LOCATION = "src/main/resources"
 
 fun main() {
     fun part1(input: String) = input.split("\r\n\r\n").map { line ->
@@ -20,4 +20,4 @@ fun main() {
 }
 
 
-fun readInput(name: String) = File(RESOURCE_ROOT, "$name.txt").readText()
+fun readInput(name: String) = File(RESOURCE_LOCATION, "$name.txt").readText()
