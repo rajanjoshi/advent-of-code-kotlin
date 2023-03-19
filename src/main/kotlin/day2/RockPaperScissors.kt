@@ -1,6 +1,6 @@
 import java.io.File
 
-private const val RESOURCE_ROOT = "src/main/resources"
+private const val RESOURCE_FOLDER = "src/main/resources"
 
 fun main(){
     println('A'.code)
@@ -17,6 +17,6 @@ fun main(){
 
 
 fun readInput(real: Boolean): String {
-    val file = File(RESOURCE_ROOT, if(real) "day2/input.txt" else "day2/test.txt")
+    val file = File(RESOURCE_FOLDER, if(real) "day2/input.txt" else "day2/test.txt")
     return file.readText().replace("\r\n", "\n")
 }
